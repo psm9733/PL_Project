@@ -17,20 +17,7 @@ typedef struct student {
 
 /* Linked list */
 
-typedef struct linkedlist {
-	int numofData;
-	Student *head;
-	Student *cur;
-	Student *tail;
-}List;
 
-void InitList(List* list);
-int Linsert(List* list, Student student);
-int LFirst(List* list, Student* getdata);
-int Lnext(List* list, Student* getdata);
-void getLNumOfStudent(List* list, int* number);
-
-/* --data handling -- */
 
 void setStudent(List* list, Student* student, int Numberofpeople, int NumberofSubject);
 int getNumOfStudent(Student* student);
